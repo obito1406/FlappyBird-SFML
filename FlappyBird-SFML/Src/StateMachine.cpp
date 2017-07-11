@@ -20,11 +20,11 @@ namespace FlappyBird
 	void StateMachine::ProcessStateChanges() //Similar to OnStateChange
 	{
 		//Remove
-		if (!mStates.empty && mIsRemoving)
+		if (!mStates.empty() && mIsRemoving)
 		{
 			mStates.pop(); //Pop removes the "top" element. The top element its always the last to join the stack as LIFO dictates.
 			
-			if (!mStates.empty)
+			if (!mStates.empty())
 			{
 				mStates.top()->Resume();	//Once the previous state has been remove we return and resume the previous state on the stack. Eg: We "remove" the pause state and "resume" come back to the main game.
 			}
