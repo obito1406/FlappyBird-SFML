@@ -148,14 +148,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AssetManager.cpp" />
-    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Src\AssetManager.cpp" />
+    <ClCompile Include="Src\InputManager.cpp" />
     <ClCompile Include="Src\main.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AssetManager.h" />
-    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Src\AssetManager.h" />
+    <ClInclude Include="Src\InputManager.h" />
     <ClInclude Include="Src\State.h" />
     <ClInclude Include="Src\StateMachine.h" />
   </ItemGroup>
