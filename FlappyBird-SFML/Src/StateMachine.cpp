@@ -47,7 +47,7 @@ namespace FlappyBird
 				}
 			}
 
-			mStates.push(std::move(mNewState));
+			mStates.push(std::move(mNewState));  //probablemente el push o el move lo hace mal puesto que no mueve a donde deberia
 			mStates.top()->Init();
 			mIsAdding = false;
 		}

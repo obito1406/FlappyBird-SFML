@@ -4,7 +4,7 @@ namespace FlappyBird
 {
 	bool InputManager::IsSpriteClick(sf::Sprite object, sf::Mouse::Button button, sf::RenderWindow &window)
 	{
-		if (sf::Mouse::isButtonPressed(button))
+		if (sf::Mouse::isButtonPressed(button)) 
 		{
 			// IntRect = Rectangle. A temporarry rectangle that we used to keep the sprite position.
 			sf::IntRect tempRect(object.getPosition().x , object.getPosition().y,

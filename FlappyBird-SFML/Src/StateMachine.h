@@ -23,7 +23,7 @@ namespace FlappyBird
 		StateRef& GetActiveState();
 
 	private:
-		std::stack<StateRef> mStates; //Vector que almacena siguiente un estilo LIFO (Last INnput First Output)
+		std::stack<StateRef> mStates; //Vector que almacena siguiente un estilo LIFO (Last Input First Output)
 		StateRef mNewState;
 
 		bool mIsRemoving;

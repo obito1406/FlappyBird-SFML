@@ -1,9 +1,20 @@
 #include <SFML/Graphics.hpp>	//NOTA: Windows de forma predeterminada usa "\" sin embargo el resto de sistemas usa "/" poner directorios de esta forma asegura poder tener compatibilidad con otros sistemas
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+#include "Game.h"
+#include "DEFINITIONS.h"
 
 int main()
+{
+	FlappyBird::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Flappy Bird");
+	
+	return EXIT_SUCCESS;
+}
+
+
+
+
+/***BASIC GAME LOOP***/
+/*int main()
 {
 	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "MyWindow");
 
@@ -22,3 +33,4 @@ int main()
 
 	return EXIT_SUCCESS;
 }
+*/

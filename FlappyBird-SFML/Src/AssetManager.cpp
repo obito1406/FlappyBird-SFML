@@ -1,5 +1,5 @@
 #include "AssetManager.h"
-
+#include "Log.h"
 
 namespace FlappyBird 
 {
@@ -10,6 +10,10 @@ namespace FlappyBird
 		if (texture.loadFromFile(fileName)) //There are more options for loadFromFile and more interesting methods that starts with load
 		{
 			mTextures[name] = texture;  //insert() and emplace() can be used to push mapa into a map too. The last one construct the data in the map doesnt copy or move.
+		}
+		else
+		{
+			WRITELOG("Couldn load the texture")
 		}
 	}
 
@@ -25,6 +29,10 @@ namespace FlappyBird
 		if (font.loadFromFile(fileName)) //There are more options for loadFromFile and more interesting methods that starts with load
 		{
 			mFonts[name] = font;  //insert() and emplace() can be used to push mapa into a map too. The last one construct the data in the map doesnt copy or move.
+		}
+		else
+		{
+			WRITELOG("Couldn load the font")
 		}
 	}
 
