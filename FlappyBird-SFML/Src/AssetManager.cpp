@@ -13,7 +13,7 @@ namespace FlappyBird
 		}
 		else
 		{
-			WRITELOG("Couldn load the texture")
+			WRITELOG("Couldnt load the texture")
 		}
 	}
 
@@ -32,7 +32,7 @@ namespace FlappyBird
 		}
 		else
 		{
-			WRITELOG("Couldn load the font")
+			WRITELOG("Couldnt load the font")
 		}
 	}
 

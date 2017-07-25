@@ -148,7 +148,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\GameOverState.cpp" />
+    <ClCompile Include="Src\GameState.cpp" />
+    <ClCompile Include="Src\Log.cpp" />
     <ClCompile Include="Src\MainMenuState.cpp" />
+    <ClCompile Include="Src\Pipe.cpp" />
     <ClCompile Include="Src\SplashState.cpp" />
     <ClCompile Include="Src\Game.cpp" />
     <ClCompile Include="Src\AssetManager.cpp" />
@@ -157,8 +161,11 @@
     <ClCompile Include="Src\StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\GameOverState.h" />
+    <ClInclude Include="Src\GameState.h" />
     <ClInclude Include="Src\MainMenuState.h" />
     <ClInclude Include="Src\Log.h" />
+    <ClInclude Include="Src\Pipe.h" />
     <ClInclude Include="Src\SplashState.h" />
     <ClInclude Include="Src\DEFINITIONS.h" />
     <ClInclude Include="Src\Game.h" />

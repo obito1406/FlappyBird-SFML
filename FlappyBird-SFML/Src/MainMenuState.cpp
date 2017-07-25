@@ -1,5 +1,5 @@
 #include "MainMenuState.h"
-
+#include "GameState.h"
 #include "DEFINITIONS.h"
 
 #include <sstream>
@@ -47,7 +47,7 @@ namespace FlappyBird
 			}
 			if (mData->input.IsSpriteClick(mPlayButton, sf::Mouse::Left, mData->window))
 			{
-				std::cout << "Go to Game Screen";
+				mData->machine.AddState(StateRef(new GameState(mData)), true);
 			}
 		}
 	}
